@@ -1,70 +1,120 @@
-# Getting Started with Create React App
+🌐 Select Country Project
+Welcome to the Select Country Project! This project is a simple React application that allows users to input a country name and submit it to display or process the information.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+📋 Table of Contents
+Introduction
+Features
+Installation
+Usage
+Running Tests
+Contributing
+License
+Acknowledgements
+📖 Introduction
+This project is built using React and Material-UI. It consists of a simple input form where users can enter a country name and submit it. The app demonstrates basic React concepts such as state management and component interaction.
 
-## Available Scripts
+✨ Features
+Simple user interface with a text input and submit button.
+State management using React hooks.
+Component-based architecture.
+Integration with Material-UI for styling and layout.
+💻 Installation
+To get started with the project, follow these steps:
 
-In the project directory, you can run:
+Clone the repository:
+bash
+Copy code
+git clone https://github.com/Shubhamshinde9528/select-country-project.git
+Navigate to the project directory:
+bash
+Copy code
+cd select-country-project
+Install dependencies:
+bash
+Copy code
+npm install
+🚀 Usage
+To run the project locally, use the following command:
 
-### `npm start`
+bash
+Copy code
+npm start
+Open your browser and navigate to http://localhost:3000 to see the application in action.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+🧪 Running Tests
+This project uses @testing-library/react for testing. To run the tests, use the following command:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+bash
+Copy code
+npm test
+Example Test
+The following is an example test case that checks if a specific link is present in the document:
 
-### `npm test`
+javascript
+Copy code
+import { render, screen } from '@testing-library/react';
+import App from './App';
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+test('renders learn react link', () => {
+  render(<App />);
+  const linkElement = screen.getByText(/learn react/i);
+  expect(linkElement).toBeInTheDocument();
+});
+Explanation of the Test Code
+The test imports the necessary functions and the App component.
+The render function from @testing-library/react is used to render the App component.
+The screen.getByText method searches for an element with the text "learn react" (case-insensitive) within the rendered component.
+The expect function checks if the found element is present in the document.
+📄 Component Description
+Selectcountry Component
+The Selectcountry component allows the user to input a country name and submit it. Here's a breakdown of the component:
 
-### `npm run build`
+Imports
+javascript
+Copy code
+import React, { useState } from "react";
+import TextField from "@mui/material/TextField";
+import Box from "@mui/material/Box";
+import Stack from "@mui/material/Stack";
+import Button from "@mui/material/Button";
+React and useState: Used for creating the component and managing state.
+Material-UI components: Used for styling and layout (though not utilized in the provided JSX).
+Component Definition
+javascript
+Copy code
+function Selectcountry(props) {
+  const [data, setData] = React.useState("");
+State Initialization: A state variable data is initialized to an empty string.
+Event Handlers
+javascript
+Copy code
+  function handleChange(event) {
+    const { value } = event.target;
+    setData(value);
+  }
+  function handleClick() {
+    props.location(data);
+  }
+handleChange: Updates the state variable data with the input field's value.
+handleClick: Calls the location function passed in through props, passing the current value of data.
+JSX Structure
+javascript
+Copy code
+  return (
+    <div className="input">
+      <input className="inputField" onChange={handleChange} />
+      <button className="button" onClick={handleClick}>Submit</button>
+    </div>
+  );
+}
+Input Field: An <input> element to capture user input, with an onChange event handler.
+Button: A <button> element to submit the input, with an onClick event handler.
+🤝 Contributing
+Contributions are welcome! If you have any ideas or suggestions to improve the project, feel free to open an issue or submit a pull request.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+📄 License
+This project is licensed under the MIT License. See the LICENSE file for more details.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+🙏 Acknowledgements
+Thanks to the React and Material-UI teams for their amazing libraries and tools.
+Made with ❤️ by Your Shubham Shinde
