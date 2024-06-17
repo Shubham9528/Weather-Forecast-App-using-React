@@ -82,7 +82,7 @@ The expect function checks if the found element is present in the document.
 
 Selectcountry Component
 The Selectcountry component allows the user to input a country name and submit it. Here's a breakdown of the component:
-
+``` Code
 Imports
 javascript
 Copy code
@@ -121,7 +121,7 @@ Copy code
     </div>
   );
 }
-
+```
 
 Input Field: An <input> element to capture user input, with an onChange event handler.
 Button: A <button> element to submit the input, with an onClick event handler.
