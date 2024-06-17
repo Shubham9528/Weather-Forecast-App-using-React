@@ -56,7 +56,7 @@ Copy code
 npm test
 Example Test
 The following is an example test case that checks if a specific link is present in the document:
-
+```
 javascript
 Copy code
 import { render, screen } from '@testing-library/react';
@@ -67,7 +67,7 @@ test('renders learn react link', () => {
   const linkElement = screen.getByText(/learn react/i);
   expect(linkElement).toBeInTheDocument();
 });
-
+```
 Explanation of the Test Code
 
 The test imports the necessary functions and the App component.
@@ -91,9 +91,11 @@ import TextField from "@mui/material/TextField";
 import Box from "@mui/material/Box";
 import Stack from "@mui/material/Stack";
 import Button from "@mui/material/Button";
+```
 React and useState: Used for creating the component and managing state.
 Material-UI components: Used for styling and layout (though not utilized in the provided JSX).
 Component Definition
+```
 javascript
 Copy code
 function Selectcountry(props) {
@@ -109,9 +111,12 @@ Copy code
   function handleClick() {
     props.location(data);
   }
+```
 handleChange: Updates the state variable data with the input field's value.
 handleClick: Calls the location function passed in through props, passing the current value of data.
+
 JSX Structure
+```
 javascript
 Copy code
   return (
