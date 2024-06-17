@@ -1,0 +1,35 @@
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 500px;
+  width: 250px;
+  color: aliceblue;
+  background-color: #1e4572;
+}
+.temperature {
+  margin-top: 30px;
+  display: flex;
+  width: 100%;
+  /* justify-content: center; */
+  align-items: center;
+  flex-direction: column;
+}
+
+.weather-data {
+  margin-top: 30px;
+  display: flex;
+  width: 100%;
+  gap: 30px;
+  justify-content: center;
+  /* align-items: center; */
+  flex-direction: row;
+}
+.button {
+  margin-top: 15%;
+  color: aliceblue;
+}
+.input {
+  display: flex;
+}

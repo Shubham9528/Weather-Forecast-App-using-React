@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 570px;
+  width: 300px;
+  color: aliceblue;
+  background: linear-gradient(135deg, #1e4572, #2c6690);
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  /* Set font family */
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+}
+
+.temperature {
+  margin-top: 10px;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  flex-direction: column;
+  font-size: 1.1em;
+}
+
+.weather-data {
+  margin-top: 30px;
+  display: flex;
+  width: 100%;
+  gap: 30px;
+  justify-content: center;
+  flex-direction: row;
+  font-size: 1.2em;
+}
+
+.weather-data div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.weather-data div i {
+  font-size: 1.5em;
+}
+
+.button {
+  margin-top: 20px;
+  color: aliceblue;
+  background-color: #3b5998;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s ease;
+  align-self: center;
+}
+
+.button:hover {
+  background-color: #4b70b0;
+}
+
+.inputField {
+  width: 50%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  margin-bottom: 20px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
