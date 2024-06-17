@@ -28,37 +28,43 @@ Simple user interface with a text input and submit button.
 State management using React hooks.
 Component-based architecture.
 Integration with Material-UI for styling and layout.
+
 💻 Installation
 To get started with the project, follow these steps:
 
 Clone the repository:
 
 bash
-Copy code
+```
 git clone https://github.com/Shubhamshinde9528/select-country-project.git
+```
 Navigate to the project directory:
 bash
-Copy code
+```
 cd select-country-project
+```
 Install dependencies:
 bash
-Copy code
+```
 npm install
+```
 🚀 Usage
 
 To run the project locally, use the following command:
 
 bash
-Copy code
+```
 npm start
+```
 Open your browser and navigate to http://localhost:3000 to see the application in action.
 
 🧪 Running Tests
 This project uses @testing-library/react for testing. To run the tests, use the following command:
 
 bash
-Copy code
+```
 npm test
+```
 Example Test
 The following is an example test case that checks if a specific link is present in the document:
 ```
