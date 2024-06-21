@@ -1,4 +1,4 @@
-🌐 Select Country Project
+#🌐 Select Country Project
 Welcome to the Select Country Project! This project is a simple React application that allows users to input a country name and submit it to display or process the information.
 
 ![1](https://github.com/Shubham9528/Weather-Forecast-App-using-React/assets/81708211/1e511000-5553-40d1-a95d-cf0498f147a1)
@@ -6,7 +6,7 @@ Welcome to the Select Country Project! This project is a simple React applicatio
 ![3](https://github.com/Shubham9528/Weather-Forecast-App-using-React/assets/81708211/198e3c0e-7878-45d6-b9eb-5c13f08253c1)
 
 
-📋 Table of Contents
+##📋 Table of Contents
 
 
 - [Introduction](#Introduction)
@@ -18,18 +18,18 @@ Welcome to the Select Country Project! This project is a simple React applicatio
 - [License](#License)
 - [Acknowledgements](#Acknowledgements)
   
-📖 Introduction
+##📖 Introduction
 
 This project is built using React and Material-UI. It consists of a simple input form where users can enter a country name and submit it. The app demonstrates basic React concepts such as state management and component interaction.
 
-✨ Features
+##✨ Features
 
 Simple user interface with a text input and submit button.
 State management using React hooks.
 Component-based architecture.
 Integration with Material-UI for styling and layout.
 
-💻 Installation
+##💻 Installation
 To get started with the project, follow these steps:
 
 Clone the repository:
@@ -48,7 +48,7 @@ bash
 ```
 npm install
 ```
-🚀 Usage
+##🚀 Usage
 
 To run the project locally, use the following command:
 
@@ -58,7 +58,7 @@ npm start
 ```
 Open your browser and navigate to http://localhost:3000 to see the application in action.
 
-🧪 Running Tests
+##🧪 Running Tests
 This project uses @testing-library/react for testing. To run the tests, use the following command:
 
 bash
@@ -89,7 +89,7 @@ The screen.getByText method searches for an element with the text "learn react" 
 
 The expect function checks if the found element is present in the document.
 
-📄 Component Description
+##📄 Component Description
 
 Selectcountry Component
 The Selectcountry component allows the user to input a country name and submit it. Here's a breakdown of the component:
@@ -142,13 +142,13 @@ Copy code
 Input Field: An <input> element to capture user input, with an onChange event handler.
 Button: A <button> element to submit the input, with an onClick event handler.
 
-🤝 Contributing
+##🤝 Contributing
 
 Contributions are welcome! If you have any ideas or suggestions to improve the project, feel free to open an issue or submit a pull request.
 
-📄 License
+##📄 License
 
-This project is licensed under the MIT License. See the LICENSE file for more details.
+This project is licensed under the -- License. See the LICENSE file for more details.
 
 🙏 Acknowledgements
 
