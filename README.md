@@ -1,4 +1,4 @@
-### 🌐 Weather Forecast Application using API
+### 🌐 Weather Forecast Application using API in React
 
 Welcome to the Select Country Project! This project is a simple React application that allows users to input a country name and submit it to display or process the information.
 
